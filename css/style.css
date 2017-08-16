@@ -1,0 +1,275 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  color: #33333;
+}
+h1, h2, h3, h4, h5, h5 {
+  margin: 10px 0;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.container{
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 25px 0;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+/*NAVIGATION*/
+nav {
+   padding: 10px 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+nav div {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 50%;
+  justify-content: flex-end;
+    align-items: center;
+}
+nav img {
+  width: auto;
+  height: 50px;
+}
+nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: 0 10px;
+}
+.signup-btn {
+  padding: 10px 15px;
+  border-radius: 2px;
+  background-color: #FFC952;
+}
+
+/*HERO*/
+header {
+    color: #FFFFFF;
+    background-image: 
+        linear-gradient(
+        rgba(71, 184, 224, 0.7),
+        rgba(0, 147, 200, 0.7)
+        ),
+        url(../img/hero.jpg);
+    background-size: cover;
+    text-align: center;
+}
+header .hero img {
+  width: auto;
+  height: 250px;
+  margin-top: 35px;
+}
+header .hero h1 {
+  font-size: 36px;
+  margin: 10px;
+}
+header .hero p {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 15px 0;
+}
+.btn {
+    display: inline-block;
+    padding:15px 25px;
+    color: #FFFFFF;
+    border-radius: 2px;
+    text-decoration: none;
+    margin: 15px auto;
+    background-color: #FFC952;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+}
+
+/*FEATURES*/
+.divider{
+    width: 25px;
+    height: 2px;
+    background-color: #FFC952;
+    margin: 3px auto;
+}
+.features i {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+.features li {
+    list-style: none;
+}
+.features p {
+    font-size: 14px;
+    line-height: 22px;
+}
+.feature-img img {
+    width: 100%;
+    height: 200px;
+    margin: 15px auto;
+    background-color: black;
+}
+
+/*TESTIMONIALS*/
+
+.testimonials {
+    margin: 0;
+    background-image: url("../img/testimonials.png");
+    background-size: cover;
+}
+.testimonial-box {
+    margin: 15px;
+    border-radius: 2px;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.25);
+}
+.testimonial-box p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.testimonial-box img {
+    border-radius: 100px;
+    margin: 10px 0;
+}
+
+/*PRICING*/
+.pricing { 
+    color: #FFFFFF;
+    background-image: linear-gradient(
+        rgba(71, 184, 224, 0.7),
+        rgba(0, 147, 200, 0.7)
+        );
+    margin: 0;
+}
+
+.pricing-box h6 {
+    padding: 15px 0;
+    font-size: 14px;
+    color: lightgray;
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;
+    border-color: lightgray;
+}
+
+.pricing-box {
+    color: #000000;
+    width: 90%;
+    margin: 10px auto;
+    padding-bottom: 25px;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.25);
+}
+.pricing-box li {
+    list-style: none;
+    font-size: 14px;
+    line-height: 36px;
+}
+.pricing-box h1 {
+    font-size: 75px;
+    font-weight: 100;
+}
+.pricing-box span:nth-child(1) {
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: -15px;
+}
+.pricing-box span:nth-child(2) {
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: -15px;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #3F3F3F;
+    text-align: center;
+    padding: 15px 0;
+}
+footer img{
+    width: 30%;
+}
+footer div {
+    margin: 15px 0;
+}
+footer a {
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+footer i {
+    display: inline-block;
+    margin-right: 10px;
+    color: #FFFFFF;
+}
+footer p {
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+/*MEDIA QUERIES, RESPONSIVE SIZES*/
+@media (min-width: 768px){
+    /*NAVIGATION*/
+    nav {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    nav div:nth-child(1) {
+        text-align: left;
+        float: left;
+    }
+    nav div:nth-child(2) {
+        text-align: right;
+    }
+    
+    /*HERO*/
+    header .hero h1 {
+        font-size: 52px;
+        line-height: 48px;
+        margin: 0;
+    }
+    header .hero p {
+        font-size: 24px;
+        line-height: 31px;
+        font-weight: 200;
+        margin: 15px 0;
+    }
+    .hero {
+        height: 85vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .hero-content {
+        text-align: left;
+        margin: 0;
+    }
+    .hero .btn {
+        margin: 0;
+        text-align: center;
+    }
+    
+}
+
+
+
+
+
+
