@@ -58,3 +58,6 @@
   font-size: 14px;
   text-decoration: none;
 }
+.dropit .dropit-open .dropit-submenu > li a:hover{
+  color: #47B8E0;
+}
